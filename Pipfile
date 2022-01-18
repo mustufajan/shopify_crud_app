@@ -18,3 +18,6 @@ python_version = "3.10"
 [scripts]
 lint = "pylama"
 test = "./manage.py test"
+migrate = "./manage.py migrate"
+startserver = "./manage.py runserver"
+server = "sh -c \"pipenv run migrate && pipenv run startserver\""

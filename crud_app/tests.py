@@ -46,7 +46,7 @@ class InventoryItemTest(TestCase):
         # checking against db
         self.assertEquals(InventoryItem.objects.get(id=id_to_delete).archived, True)
 
-    def test_delete_non_existinginventory_item(self):
+    def test_delete_non_existing_inventory_item(self):
         """
         Test deleting a non-existing item
         """
@@ -58,7 +58,7 @@ class InventoryItemTest(TestCase):
 
     def test_retrieve_inventory_item(self):
         """
-        Testing retrieving an inventory item
+        Test retrieving an inventory item
         """
         c = self.client
         pk = InventoryItem.objects.first().id
@@ -68,7 +68,7 @@ class InventoryItemTest(TestCase):
 
     def test_patch_inventory_item(self):
         """
-        Testing the editing an inventory item
+        Test editing an inventory item
         """
         c = self.client
         pk = InventoryItem.objects.first().id
@@ -87,7 +87,7 @@ class InventoryItemTest(TestCase):
 
     def test_create_inventory_item(self):
         """
-        Testing the creating an inventory item
+        Test creating an inventory item
         """
         c = self.client
         url = reverse("inventory_item-list")
