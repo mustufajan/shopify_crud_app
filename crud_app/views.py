@@ -24,7 +24,7 @@ class InventoryItemViewSet(viewsets.ModelViewSet):
     def destroy(self, request, pk=None):
         try:
             item_to_be_destroyed = InventoryItem.objects.get(id=pk)
-        except:
+        except InventoryItem.DoesNotExist:
             raise InventoryItemDoesNotExist()
 
         item_to_be_destroyed.archived = True

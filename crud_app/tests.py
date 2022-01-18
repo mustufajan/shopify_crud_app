@@ -46,7 +46,7 @@ class InventoryItemTest(TestCase):
         # checking against db
         self.assertEquals(InventoryItem.objects.get(id=id_to_delete).archived, True)
 
-    def test_delete_inventory_item(self):
+    def test_delete_non_existinginventory_item(self):
         """
         Test deleting a non-existing item
         """
