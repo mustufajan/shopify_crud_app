@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('crud_app', '0001_initial'),
+        ("crud_app", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='inventoryitem',
-            name='archived',
+            model_name="inventoryitem",
+            name="archived",
             field=models.BooleanField(default=False),
         ),
     ]
