@@ -59,7 +59,7 @@ Fill in the POST form and press the POST button to create an inventory item.
 ```
 POST http://localhost:8000/api/inventory_collection/
 ```
-![img_4.png](img_4.png)
+![img_4.png](application_preview/img_4.png)
 
 ### List all inventory items
 Head over to http://localhost:8000/api/inventory_item/ using a browser.
@@ -71,14 +71,14 @@ This endpoint's response is paginated. You can use query parameters like page_si
 ```
 GET http://localhost:8000/api/inventory_item/?page_size=2&page=1
 ```
-![img_3.png](img_3.png)
+![img_3.png](application_preview/img_3.png)
 
 ### Create an inventory item
 Fill in the POST form and press the POST button to create an inventory item.
 ```
 POST http://localhost:8000/api/inventory_item/
 ```
-![img.png](img.png)
+![img.png](application_preview/img.png)
 
 ### Edit an inventory item
 Fill in the HTML form or manual JSON and press the PUT/PATCH button to edit an inventory item. If using the manual JSON format, note that the collection field is a list of ids of the collections the inventory item is assigned to.
@@ -86,9 +86,9 @@ Fill in the HTML form or manual JSON and press the PUT/PATCH button to edit an i
 PUT/PATCH http://localhost:8000/api/inventory_item/{id_of_the_inventory_item}/
 e.x. http://localhost:8000/api/inventory_item/3/
 ```
-![img_6.png](img_6.png)
+![img_6.png](application_preview/img_6.png)
 
-![img_7.png](img_7.png)
+![img_7.png](application_preview/img_7.png)
 
 ### Delete an inventory item
 Press the DELETE button to delete an inventory item. This API call does not delete the items in the database. It sets the 'archived' field to True. This ensures that the inventory items are not accessible through GET requests but are still stored in the database.
@@ -97,4 +97,4 @@ Future functionalities can be built around this retroactively to support undelet
 DELETE http://localhost:8000/api/inventory_item/{id_of_the_inventory_item}/
 e.x. http://localhost:8000/api/inventory_item/3/
 ```
-![img_2.png](img_2.png)
+![img_2.png](application_preview/img_2.png)
