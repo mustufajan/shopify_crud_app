@@ -29,7 +29,7 @@ If the file is downloaded with the name, "env", ensure to rename it to ".env".
 In a production setting, this would have been stored using the something like AWS key Management Services.
 Please follow the instructions below after adding the .env file to run the application.
 
-If you do not have pipenv installed. Please see the [link](https://pipenv.pypa.io/en/latest/install/) to install it.
+If you do not have pipenv installed, please see the [link](https://pipenv.pypa.io/en/latest/install/) to install it.
 You can use the following command to ensure pipenv is installed.
 ```
 pipenv --version
