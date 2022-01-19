@@ -80,6 +80,14 @@ POST http://localhost:8000/api/inventory_item/
 ```
 ![img.png](application_preview/img.png)
 
+### Retrieve an inventory item
+Retrieve an inventory item by requesting the following endpoint in your browser
+```
+GET http://localhost:8000/api/inventory_item/{id_of_the_inventory_item}/
+e.x. http://localhost:8000/api/inventory_item/2/
+```
+![img.png](img.png)
+
 ### Edit an inventory item
 Fill in the HTML form or manual JSON and press the PUT/PATCH button to edit an inventory item. If using the manual JSON format, note that the collection field is a list of ids of the collections the inventory item is assigned to.
 ```
